@@ -24,7 +24,7 @@ import { useEffect } from "react";
 import { io } from "socket.io-client";
 import { setSocket } from "./redux/userSlice";
 
-export const serverUrl = "http://localhost:6000";
+export const serverUrl = "http://localhost:4000";
 function App() {
   const { userData } = useSelector((state) => state.user);
   const dispatch = useDispatch();
