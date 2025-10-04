@@ -25,7 +25,7 @@ import { io } from "socket.io-client";
 import { setSocket } from "./redux/userSlice";
 
 export const serverUrl =
-  process.env.BACKEND_URL || "https://foodzy-backend-fg3r.onrender.com";
+  import.meta.env.BACKEND_URL || "https://foodzy-backend-fg3r.onrender.com";
 function App() {
   const { userData } = useSelector((state) => state.user);
   const dispatch = useDispatch();
